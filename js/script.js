@@ -8,9 +8,6 @@ $(document).ready(function () {
     }
   });
 
- 
-
-
   // Check initial scroll position
   if ($(window).scrollTop() > 10) {
     $("#main-navbar").addClass("scrolled");
