@@ -290,6 +290,12 @@ html {
   transition: background-color 0.4s ease;
 }
 
+@media (max-width : 576px) {
+  .btn-primary {
+    padding: 0.75rem 1rem;
+  }
+}
+
 .btn-primary:hover {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
@@ -456,24 +462,43 @@ html {
   }
 }
 
-* Features Section Styles */ .margin-top-image {
+* Features Section Styles */ 
+
+.margin-top-image {
   margin-top: -23rem !important;
 }
 
+
+
 .features-section {
   position: relative;
+  margin-bottom: 5rem !important;
 }
 
 @media (max-width: 576px) {
   .pt-mobile {
     top: -20rem;
+    margin-bottom : 0rem !important;
   }
 
   .gap-mobile {
     gap: 6rem;
   }
+
+  .features-content {
+    text-align: center !important;
+  }
 }
 
+@media (max-width: 376px) {
+  .pt-mobile {
+    top: -12rem;
+  }
+
+  .gap-mobile {
+    gap: 10rem ;
+}
+}
 @media (min-width: 576px) {
   .pt-sm-2 {
     padding-top: 0.5rem;
@@ -541,6 +566,7 @@ html {
 @media (max-width: 576px) {
   .enroll-section {
     padding-bottom: 8rem;
+    margin-top: -10rem;
   }
 }
 
@@ -564,6 +590,12 @@ html {
 
 .service-bg-img {
   height: 40vh;
+}
+
+@media (max-width: 376px) {
+  .service-bg-img {
+    height: 50vh;
+  }
 }
 
 @media (min-width: 576px) {
@@ -611,6 +643,12 @@ html {
   }
 }
 
+@media (max-width : 376px) {
+  .carousel-wrapper {
+    height: 70vh !important;
+}
+}
+
 @media (min-width: 768px) {
   .card-slide {
     flex: 0 0 33.33%;
@@ -641,13 +679,23 @@ html {
 
 @media (max-width: 576px) {
   .image-alligator {
-    left: 6rem !important; /* override inline styles if any */
+    left: 5rem !important; /* override inline styles if any */
   }
 
   .about-boy {
-    width: 400px !important;
+    width: 380px !important;
   }
 }
+
+@media (max-width : 376px) {
+  .image-alligator {
+    left: 4rem !important; /* override inline styles if any */
+  }
+  .about-boy {
+    width: 350px !important;
+}
+}
+
 /* About Section Styles */
 
 .progress-custom {
@@ -994,7 +1042,7 @@ html {
 /* mb-5 py-16 px-6 md:px-10 lg:px-20 relative */
 
 .admission-container {
-  min-height: 80vh;
+  min-height: 60vh;
   background-size: cover;
   background-position: "center";
   background-repeat: no-repeat;
@@ -1086,6 +1134,14 @@ html {
     gap: 8rem !important;
   }
 }
+
+@media (max-width:376px) { 
+  .blog-gap {
+    gap: 10rem !important;
+}
+
+}
+
 /* Footer Styles */
 .footer-logo img {
   max-width: 200px;
