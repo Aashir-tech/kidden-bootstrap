@@ -462,8 +462,14 @@ html {
   position: relative;
 }
 
-.pt-mobile {
-  padding-top: 40rem;
+@media (max-width: 576px) {
+  .pt-mobile {
+    top: -20rem;
+  }
+
+  .gap-mobile {
+    gap: 6rem;
+  }
 }
 
 @media (min-width: 576px) {
@@ -530,6 +536,12 @@ html {
   }
 }
 
+@media (max-width: 576px) {
+  .enroll-section {
+    padding-bottom: 8rem;
+  }
+}
+
 .card-image-wrapper {
   height: 200px;
 }
@@ -586,6 +598,17 @@ html {
     flex: 0 0 50%;
   }
 }
+
+@media (max-width: 576px) {
+  .carousel-wrapper {
+    height: 55vh !important;
+  }
+
+  .event-gap {
+    gap: 5rem !important;
+  }
+}
+
 @media (min-width: 768px) {
   .card-slide {
     flex: 0 0 33.33%;
@@ -616,7 +639,11 @@ html {
 
 @media (max-width: 576px) {
   .image-alligator {
-    left: 7rem !important; /* override inline styles if any */
+    left: 6rem !important; /* override inline styles if any */
+  }
+
+  .about-boy {
+    width: 400px !important;
   }
 }
 /* About Section Styles */
@@ -791,6 +818,12 @@ html {
   height: 60vh;
   border-radius: 1rem;
   transition: transform 0.5s;
+}
+
+@media (max-width: 576px) {
+  .teacher-image {
+    height: 55vh !important;
+  }
 }
 
 .teacher-card:hover .teacher-image {
@@ -1015,7 +1048,6 @@ html {
   }
 }
 
-
 /* Blogs Section Styles */
 
 .blog-section {
@@ -1046,12 +1078,24 @@ html {
     padding-right: 5rem;
   }
 }
+
+@media (max-width: 576px) {
+  .blog-gap {
+    gap: 8rem !important;
+  }
+}
 /* Footer Styles */
 .footer-logo img {
   max-width: 200px;
   height: auto;
 }
 
+@media (max-width: 576px) {
+  .footer {
+    padding: 1rem !important;
+    padding-top: 5rem !important;
+  }
+}
 .social-link {
   display: inline-flex;
   align-items: center;
@@ -1082,7 +1126,7 @@ html {
 }
 
 .footer-links li::before {
-  content: '•';
+  content: "•";
   color: #ff6b35;
   font-weight: bold;
   position: absolute;
