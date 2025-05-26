@@ -51,7 +51,7 @@ body {
   bottom: 0rem;
   width: 100%;
   height: 100vh;
-  z-index: 4;
+  z-index: 10;
   background: url("../images/images/hero-bottom-shape-02.png") no-repeat bottom
     center;
   background-size: contain;
@@ -1262,4 +1262,21 @@ html {
   font-size: 1rem;
   margin: 0;
   z-index: 10;
+}
+
+/* bg-[#ff6b35] text-white cursor-pointer rounded-xl px-4 py-3 shadow-lg hover:bg-[#ffc04e] border-b-[3px] border-b-[#ffc04e] transition-all duration-500 */
+
+.scrollTopBtn {
+  background-color: #ff6b35;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding : 0.75rem 1rem;
+  box-shadow: #e55a2b;
+  border : 1px solid #ff6b35;
+  border-bottom: 3px solid #f9b001;
+  transition: all 500;
+}
+
+@media (max-width < 576px) {
+  
 }

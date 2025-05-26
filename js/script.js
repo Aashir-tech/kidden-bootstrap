@@ -1,3 +1,6 @@
+function scrollToTop() {
+  $(window).scrollTop(0);
+}
 
 
 $(document).ready(function () {
