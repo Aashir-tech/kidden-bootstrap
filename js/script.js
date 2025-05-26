@@ -2,6 +2,16 @@ function scrollToTop() {
   $(window).scrollTop(0);
 }
 
+// Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+});
+
+// Listen for the scroll event and log the event data
+// lenis.on('scroll', (e) => {
+//   console.log(e);
+// });
+
 
 $(document).ready(function () {
   // Handle navbar background on scroll
